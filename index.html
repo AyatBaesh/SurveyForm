@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+  <title>Survey Form</title>
+  <meta charset = 'UTF-8'>
+  <link rel = 'stylesheet' href = 'styles.css'>
+</head>
+<body>
+  <h1 id='title'>Survey Form</h1>
+  <p id = 'description'>Thank you for taking the time to help us</p>
+  <form id = 'survey-form' action = 'url'>
+    <fieldset name = 'user-data'>
+      <label id="name-label" for="name" class="user-data">Name <input id = 'name' name = 'Name' type = 'text' placeholder = 'Enter your name' required></label>
+      <label id="email-label" for="email" class="user-data">Email <input id='email' name='Email' type = 'email' placeholder = 'Enter your email' required></label>
+      <label id="number-label" for="age" class="user-data">Age(optional) <input id = 'number' type = 'Number' min = '10' max = '110' placeholder = 'Age'></label>
+      <label for="pet-selection">What pet do you prefer</label>
+      <label>
+        <select class='select' id="dropdown" required>
+          <option disabled selected>choose one</option>
+          <option value = 'cat'>cat</option>
+          <option value = 'dog'>dog</option>
+          <option value = 'parrot'>parrot</option>
+          <option value = 'hamster'>hamster</option>
+          <option value = 'all'>all of them</option>
+          <option value = 'other'>other</option>
+      </select>
+      </label>
+    </fieldset>
+    <fieldset name = 'user-answers'>
+      <label class="weather"> What weather do you prefer</label>
+      <label><input id = 'sunny' name = 'weather' class="checkbox" type = 'radio' value="sun" checked> Sunny</label>
+      <label><input id = 'rainy' name = 'weather' class="checkbox" type = 'radio' value="rain"> Rainy</label>
+      <label><input id = 'cloudy' name = 'weather' class="checkbox" type = 'radio' value="cloud"> Cloudy</label>
+      <label class ='snacks'>What snack is your favourite(Check all that apply)</label>
+        <label><input id='chips' class="checkbox" type = 'checkbox' value="chips"> Chips</label>
+        <label><input id='cookies' class="checkbox" type = 'checkbox' value="cookies"> Cookies</label>
+        <label><input id='chocolate' class="checkbox" type = 'checkbox' value="chocolate"> Chocolate</label>
+        <label><input id='jellybeans' class="checkbox" type = 'checkbox' value="jellybeans"> Jelly beans</label>
+        <label><input id='ice-cream' class="checkbox" type = 'checkbox' value="icecream"> Ice-cream</label>
+    </fieldset>
+    <fieldset id = 'user-comment'>
+      <label>Share your thoughts:</label>
+        <textarea id ='comment' rows ='10' cols = '80' placeholder='Here are some thoughts about...'></textarea>
+    </fieldset>
+    <input id = 'submit' type = 'submit' value = "Submit">
+  </form>
+</body> 
